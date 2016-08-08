@@ -1,0 +1,110 @@
+.dlsprite {
+    background-image: url(dl-spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.dlsprite-back {
+    width: 32px;
+    height: 70px;
+    background-position: -5px -5px;
+    display: inline-block !important;
+}
+
+.dlsprite-dl-amazon {
+    width: 250px;
+    height: 85px;
+    background-position: -47px -5px;
+    display: inline-block !important;
+}
+
+.dlsprite-dl-android {
+    width: 250px;
+    height: 85px;
+    background-position: -5px -100px;
+    display: inline-block !important;
+}
+
+.dlsprite-dl-desktop {
+    width: 250px;
+    height: 85px;
+    background-position: -5px -195px;
+    display: inline-block !important;
+}
+
+.dlsprite-dl-ios {
+    width: 250px;
+    height: 85px;
+    background-position: -5px -290px;
+    display: inline-block !important;
+}
+
+.dlsprite-download-amazon {
+    width: 66px;
+    height: 66px;
+    background-position: -307px -5px;
+    display: inline-block !important;
+}
+
+.dlsprite-download-android {
+    width: 66px;
+    height: 66px;
+    background-position: -307px -81px;
+    display: inline-block !important;
+}
+
+.dlsprite-download-desktop {
+    width: 66px;
+    height: 66px;
+    background-position: -265px -157px;
+    display: inline-block !important;
+}
+
+.dlsprite-download-ios {
+    width: 66px;
+    height: 66px;
+    background-position: -265px -233px;
+    display: inline-block !important;
+}
+
+.dlsprite-icon-amazon {
+    width: 60px;
+    height: 60px;
+    background-position: -265px -309px;
+    display: inline-block !important;
+}
+
+.dlsprite-icon-android {
+    width: 60px;
+    height: 60px;
+    background-position: -383px -5px;
+    display: inline-block !important;
+}
+
+.dlsprite-icon-desktop {
+    width: 60px;
+    height: 60px;
+    background: url("/monkeyweb/dl/windown.png");
+    display: inline-block !important;
+}
+
+.dlsprite-icon-mac {
+    width: 60px;
+    height: 60px;
+    background: url("/monkeyweb/dl/mac.png");
+    display: inline-block !important;
+}
+
+.dlsprite-icon-ios {
+    width: 60px;
+    height: 60px;
+    background-position: -383px -145px;
+    display: inline-block !important;
+}
+
+.dlsprite-next {
+    width: 32px;
+    height: 70px;
+    background-position: -341px -215px;
+    display: inline-block !important;
+}

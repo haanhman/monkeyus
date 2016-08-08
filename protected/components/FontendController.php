@@ -261,7 +261,7 @@ class FontendController extends CController {
                 'public/css/tooltipster.css',
                 'monkeyweb/css/jquery-video-lightning.css',
                 'monkeyweb/css/newfooter.css',
-                'monkeyweb/css/dl.css'
+                'monkeyweb/css/dl2.css'
             );
             if ($ctl == 'coupon') {
                 unset($listFile[2], $listFile[3]);
