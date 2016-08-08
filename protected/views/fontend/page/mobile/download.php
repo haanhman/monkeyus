@@ -12,13 +12,13 @@
         }
 
         $platform = isset($_GET['platform']) ? $_GET['platform'] : '';
-        if($platform == 'ios') {
+        if ($platform == 'ios') {
             $first = $this->t(6, 'ios_tab', 'page');
-        } elseif($platform == 'android') {
+        } elseif ($platform == 'android') {
             $first = $this->t(6, 'android_tab', 'page');
-        } elseif($platform == 'amazon') {
+        } elseif ($platform == 'amazon') {
             $first = $this->t(6, 'amazon_tab', 'page');
-        } elseif($platform == 'desktop') {
+        } elseif ($platform == 'desktop') {
             $first = $this->t(6, 'desktop_tab', 'page');
         }
 
@@ -41,6 +41,7 @@
                 <a href="#" class="list-group-item"><span><?php echo $this->t(6, 'ios_tab', 'page'); ?></span></a>
                 <a href="#" class="list-group-item"><span><?php echo $this->t(6, 'android_tab', 'page'); ?></span></a>
                 <a href="#" class="list-group-item"><span><?php echo $this->t(6, 'amazon_tab', 'page'); ?></span></a>
+                <a href="#" class="list-group-item"><span><?php echo $this->t(6, 'mac_tab', 'page'); ?></span></a>
             </div>
 
 
@@ -50,12 +51,72 @@
                     <img class="img-responsive" src="/monkeyweb/images/mobile/desktop.png"/>
                 </div>
                 <p class="lead"><?php echo $this->t(6, 'desktop_desc', 'page'); ?></p>
-<!--                <p>-->
-<!--                <div class="download_here">--><?php //echo $this->t(6, 'download_here', 'page'); ?><!--</div>-->
-<!--                    <a target="_blank" href="/files/monkey-junior.exe">-->
-<!--                        <img style="width: 300px" class="img-responsive" src="/monkeyweb/images/mobile/dl.png"/>-->
-<!--                    </a>-->
-<!--                </p>-->
+
+                <?php
+                $ignore_os = array(
+                    'Windows Vista',
+                    'Windows XP',
+                    'Windows 2000',
+                    'Windows 98',
+                    'Windows 95',
+                    'Windows Server 2003/XP x64',
+                    'Mac OS X'
+                );
+                if (!in_array($data['os'], $ignore_os)) {
+                    ?>
+                    <p>
+                    <div class="download_here"><?php echo $this->t(6, 'download_here', 'page'); ?></div>
+                    <a target="_blank" href="<?php echo $this->url_download['laptop']['url'] ?>">
+                        <img style="width: 300px" class="img-responsive" src="/monkeyweb/images/mobile/dl.png"/>
+                    </a>
+                    </p>
+                    <?php
+                } else {
+                    ?>
+                    <div class="alert alert-danger" role="alert">
+                        Download and install Monkey Junior for Windows Desktop or Laptop that runs on Windows 07 or
+                        later.
+                    </div>
+
+                    <?php
+                }
+                ?>
+
+
+            </div>
+
+            <div class="col-lg-12 mac platform-info">
+                <h2 class="text-center"><?php echo $this->t(6, 'mac_title', 'page'); ?></h2>
+                <div class="image">
+                    <img class="img-responsive" src="/monkeyweb/images/mobile/desktop.png"/>
+                </div>
+                <p class="lead"><?php echo $this->t(6, 'mac_desc', 'page'); ?></p>
+
+                <?php
+                $ignore_os = array(
+                    'Mac OS X',
+                    'Mac OS 9'
+                );
+                if (in_array($data['os'], $ignore_os)) {
+                    ?>
+                    <p>
+                    <div class="download_here"><?php echo $this->t(6, 'download_here', 'page'); ?></div>
+                    <a target="_blank" href="<?php echo $this->url_download['mac']['url'] ?>">
+                        <img style="width: 300px" class="img-responsive" src="/monkeyweb/images/mobile/dl.png"/>
+                    </a>
+                    </p>
+                    <?php
+                } else {
+                    ?>
+                    <div class="alert alert-danger" role="alert">
+                        Download and install Monkey Junior for Mac Desktop or Laptop that runs on Mac
+                    </div>
+
+                    <?php
+                }
+                ?>
+
+
             </div>
 
             <div class="col-lg-12 iOS platform-info">
@@ -66,9 +127,9 @@
                 <p class="lead"><?php echo $this->t(6, 'ios_desc', 'page'); ?></p>
                 <p>
                 <div class="download_here"><?php echo $this->t(6, 'download_here', 'page'); ?></div>
-                    <a target="_blank" href="<?php echo $this->url_download['ios']['url'] ?>">
-                        <img style="width: 300px" class="img-responsive" src="/monkeyweb/images/mobile/dl.png"/>
-                    </a>
+                <a target="_blank" href="<?php echo $this->url_download['ios']['url'] ?>">
+                    <img style="width: 300px" class="img-responsive" src="/monkeyweb/images/mobile/dl.png"/>
+                </a>
                 </p>
             </div>
 
@@ -80,9 +141,9 @@
                 <p class="lead"><?php echo $this->t(6, 'android_desc', 'page'); ?></p>
                 <p>
                 <div class="download_here"><?php echo $this->t(6, 'download_here', 'page'); ?></div>
-                    <a target="_blank" href="<?php echo $this->url_download['android']['url'] ?>">
-                        <img style="width: 300px" class="img-responsive" src="/monkeyweb/images/mobile/dl.png"/>
-                    </a>
+                <a target="_blank" href="<?php echo $this->url_download['android']['url'] ?>">
+                    <img style="width: 300px" class="img-responsive" src="/monkeyweb/images/mobile/dl.png"/>
+                </a>
                 </p>
             </div>
 
@@ -93,10 +154,10 @@
                 </div>
                 <p class="lead"><?php echo $this->t(6, 'amazon_desc', 'page'); ?></p>
                 <p>
-                    <div class="download_here"><?php echo $this->t(6, 'download_here', 'page'); ?></div>
-                    <a target="_blank" href="<?php echo $this->url_download['amazon']['url'] ?>">
-                        <img style="width: 300px" class="img-responsive" src="/monkeyweb/images/mobile/dl.png"/>
-                    </a>
+                <div class="download_here"><?php echo $this->t(6, 'download_here', 'page'); ?></div>
+                <a target="_blank" href="<?php echo $this->url_download['amazon']['url'] ?>">
+                    <img style="width: 300px" class="img-responsive" src="/monkeyweb/images/mobile/dl.png"/>
+                </a>
                 </p>
             </div>
 
@@ -110,9 +171,11 @@
     .platform-info .download_here {
         padding-bottom: 10px;
     }
+
     .platform-info p.lead {
         padding-top: 10px;
     }
+
     div.platform a {
         text-align: center;
         background: #cfcfcf;
@@ -170,11 +233,14 @@
     });
     function detectPlatForm() {
         var currentPlatform = $('.p-selected:first').html();
-        if(currentPlatform == '<?php echo $this->t(6, 'desktop_tab', 'page') ?>') {
+        if (currentPlatform == '<?php echo $this->t(6, 'desktop_tab', 'page') ?>') {
             currentPlatform = 'desktop-laptop';
         }
-        if(currentPlatform == '<?php echo $this->t(6, 'amazon_tab', 'page') ?>') {
+        if (currentPlatform == '<?php echo $this->t(6, 'amazon_tab', 'page') ?>') {
             currentPlatform = 'Amazon';
+        }
+        if (currentPlatform == '<?php echo $this->t(6, 'mac_tab', 'page') ?>') {
+            currentPlatform = 'mac';
         }
         $('div.' + currentPlatform).show();
     }
