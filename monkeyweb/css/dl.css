@@ -84,7 +84,14 @@
 .dlsprite-icon-desktop {
     width: 60px;
     height: 60px;
-    background-position: -383px -75px;
+    background: url("/monkeyweb/dl/windown.png");
+    display: inline-block !important;
+}
+
+.dlsprite-icon-mac {
+    width: 60px;
+    height: 60px;
+    background: url("/monkeyweb/dl/mac.png");
     display: inline-block !important;
 }
 

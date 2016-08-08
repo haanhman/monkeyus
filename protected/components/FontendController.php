@@ -212,6 +212,12 @@ class FontendController extends CController {
                 'url_store' => $this->createUrl('page/laptop'),
                 'title' => 'Hướng dẫn cài đặt Monkey Junior trên PC, laptop',
                 'youtube' => 'TEOafhmq35I',
+            ),
+            'mac' => array(
+                'url' => 'https://itunes.apple.com/app/id1133076609?mt=12',
+                'url_store' => 'https://itunes.apple.com/app/id1133076609?mt=12',
+                'title' => 'Hướng dẫn cài đặt Monkey Junior trên PC, laptop',
+                'youtube' => 'TEOafhmq35I',
             )
         );
 

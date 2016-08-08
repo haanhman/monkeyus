@@ -60,7 +60,7 @@ class TranslateController extends MkController
                 3 => 'heading_1,heading_2,html_content',
                 4 => 'heading,but,html_content',
                 5 => 'heading_text,name_placeholder,email_placeholder,btn_text,btn_desc',
-                6 => 'title,meta_desc,meta_keyword,heading_text,desktop_tab,ios_tab,android_tab,amazon_tab,desktop_title,desktop_desc,ios_title,ios_desc,android_title,android_desc,amazon_title,amazon_desc,download_here',
+                6 => 'title,meta_desc,meta_keyword,heading_text,desktop_tab,ios_tab,android_tab,amazon_tab,desktop_title,desktop_desc,ios_title,ios_desc,android_title,android_desc,amazon_title,amazon_desc,download_here,mac_title,mac_desc,mac_tab',
             )
         );
         return explode(',', $fields[$page][$block]);

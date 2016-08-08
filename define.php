@@ -6,15 +6,15 @@ date_default_timezone_set('Asia/Bangkok');
 ini_set('session.cookie_lifetime', 3600 * 5); //thoi gian time out
 error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING & ~E_DEPRECATED);
 
+
 global $mysql_config, $mysql_address, $us_content;
 $us_content = 0;
-if ($_SERVER['SERVER_NAME'] == 'www.monkeyjunior.com' | $_GET['us'] == 1) {
+if ($_SERVER['SERVER_NAME'] == 'www.monkeyjunior.com' | $_SERVER['SERVER_NAME'] == 'monkeyjunior.us' | $_GET['us'] == 1) {
     $us_content = 1;
 }
 
-
 $mysql_address = array(
-    'vn1' => '123.30.236.70',
+    'vn1' => 'localhost',
     'vn2' => 'localhost'
 );
 
@@ -68,7 +68,11 @@ define('LICENCE_CREATE', 'http://54.187.133.151/pricing/create');
 define('CURL_BUYWITHCOUPON', 'http://54.187.133.151/agent/service/buy');
 define('CURL_VALIDATE_COUPON', 'http://54.187.133.151/agent/service/validatecoupon');
 
-define('MINIFY_HTML', true);
+$compress = false;
+if($_SERVER['SERVER_NAME'] != 'monkeyjunior.us') {
+    $compress = true;
+}
+define('MINIFY_HTML', $compress);
 
 define('FACEPAGE', 'https://www.facebook.com/1658165124411579');
 

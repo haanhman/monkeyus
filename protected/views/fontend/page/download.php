@@ -18,7 +18,7 @@
                 </div>
                 <div data-u="slides"
                      style="cursor: default; position: relative; top: 27px; left: 0px; width: 960px; height: 310px;">
-                    <div data-p="240.0" style="display: none;">
+                    <div data-p="192.0" style="display: none;">
                         <div class="slide-data">
                             <div class="inner">
                                 <h2><strong><?php echo $this->t(6, 'ios_title', 'page') ?></strong></h2>
@@ -30,17 +30,17 @@
                                 </p>
                             </div>
                             <div class="image">
-                                <img src="/monkeyweb/images/iPhone-iPad.png" />
+                                <img src="/monkeyweb/images/iPhone-iPad.png"/>
                             </div>
                             <div class="clearfix"></div>
                         </div>
                         <div u="thumb">
                             <i class="dlsprite dlsprite-icon-ios"></i>
-                            <br />
+                            <br/>
                             <strong><?php echo $this->t(6, 'ios_tab', 'page') ?></strong>
                         </div>
                     </div>
-                    <div data-p="240.0" style="display: none;">
+                    <div data-p="192.0" style="display: none;">
                         <div class="slide-data">
                             <div class="inner">
                                 <h2><strong><?php echo $this->t(6, 'android_title', 'page') ?></strong></h2>
@@ -52,17 +52,17 @@
                                 </p>
                             </div>
                             <div class="image">
-                                <img src="/monkeyweb/images/android-amazon.png" />
+                                <img src="/monkeyweb/images/android-amazon.png"/>
                             </div>
                             <div class="clearfix"></div>
                         </div>
                         <div u="thumb">
                             <i class="dlsprite dlsprite-icon-android"></i>
-                            <br />
+                            <br/>
                             <strong><?php echo $this->t(6, 'android_tab', 'page') ?></strong>
                         </div>
                     </div>
-                    <div data-p="240.0" style="display: none;">
+                    <div data-p="192.0" style="display: none;">
                         <div class="slide-data">
                             <div class="inner">
                                 <h2><strong><?php echo $this->t(6, 'amazon_title', 'page') ?></strong></h2>
@@ -74,36 +74,101 @@
                                 </p>
                             </div>
                             <div class="image">
-                                <img src="/monkeyweb/images/android-amazon.png" />
+                                <img src="/monkeyweb/images/android-amazon.png"/>
                             </div>
                             <div class="clearfix"></div>
                         </div>
                         <div u="thumb">
                             <i class="dlsprite dlsprite-icon-amazon"></i>
-                            <br />
+                            <br/>
                             <strong><?php echo $this->t(6, 'amazon_tab', 'page') ?></strong>
                         </div>
                     </div>
-                    <div data-p="240.0" style="display: none;">
+                    <div data-p="192.0" style="display: none;">
                         <div class="slide-data">
                             <div class="inner">
                                 <h2><strong><?php echo $this->t(6, 'desktop_title', 'page') ?></strong></h2>
                                 <p class="desc"><?php echo $this->t(6, 'desktop_desc', 'page') ?></p>
-                                <!--                                <p class="download">-->
-                                <!--                                    <a target="_blank" href="--><?php //echo $this->url_download['laptop']['url'] ?><!--">-->
-                                <!--                                        <i class="dlsprite dlsprite-dl-desktop"></i>-->
-                                <!--                                    </a>-->
-                                <!--                                </p>-->
+
+                                <?php
+                                $ignore_os = array(
+                                    'Windows Vista',
+                                    'Windows XP',
+                                    'Windows 2000',
+                                    'Windows 98',
+                                    'Windows 95',
+                                    'Windows Server 2003/XP x64',
+                                    'Mac OS X'
+                                );
+                                if (!in_array($data['os'], $ignore_os)) {
+                                    ?>
+                                    <p class="download">
+                                        <a target="_blank" href="<?php echo $this->url_download['laptop']['url'] ?>">
+                                            <img src="/monkeyweb/dl/dl-windown.png" alt="" />
+                                        </a>
+                                    </p>
+                                    <?php
+                                } else {
+                                    ?>
+                                    <div class="alert alert-danger" role="alert">
+                                        Download and install Monkey Junior for Windows Desktop or Laptop that runs on Windows 07 or later.
+                                    </div>
+
+                                    <?php
+                                }
+                                ?>
+
+
+
                             </div>
                             <div class="image">
-                                <img src="/monkeyweb/images/desktop.png" />
+                                <img src="/monkeyweb/images/desktop.png"/>
                             </div>
                             <div class="clearfix"></div>
                         </div>
                         <div u="thumb">
                             <i class="dlsprite dlsprite-icon-desktop"></i>
-                            <br />
+                            <br/>
                             <strong><?php echo $this->t(6, 'desktop_tab', 'page') ?></strong>
+                        </div>
+                    </div>
+                    <div data-p="192.0" style="display: none;">
+                        <div class="slide-data">
+                            <div class="inner">
+                                <h2><strong><?php echo $this->t(6, 'mac_title', 'page') ?></strong></h2>
+                                <p class="desc"><?php echo $this->t(6, 'mac_desc', 'page') ?></p>
+                                <?php
+                                $ignore_os = array(
+                                    'Mac OS X',
+                                    'Mac OS 9'
+                                );
+                                if (in_array($data['os'], $ignore_os)) {
+                                    ?>
+                                    <p class="download">
+                                        <a target="_blank" href="<?php echo $this->url_download['mac']['url'] ?>">
+                                            <img src="/monkeyweb/dl/dl-mac.png" alt="" />
+                                        </a>
+                                    </p>
+                                    <?php
+                                } else {
+                                    ?>
+                                    <div class="alert alert-danger" role="alert">
+                                        Download and install Monkey Junior for Mac Desktop or Laptop that runs on Mac
+                                    </div>
+
+                                    <?php
+                                }
+                                ?>
+                            </div>
+                            <div class="image">
+                                <img src="/monkeyweb/images/desktop.png"/>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div u="thumb">
+                            <i class="dlsprite dlsprite-icon-mac"></i>
+                            <br/>
+                            <strong><?php echo $this->t(6, 'mac_tab', 'page') ?></strong>
                         </div>
                     </div>
                 </div>
@@ -120,33 +185,37 @@
                     <!-- Thumbnail Item Skin End -->
                 </div>
                 <!-- Arrow Navigator -->
-                <span data-u="arrowleft" class="jssora12l" style="top:0px;left:-60px;width:30px;height:46px;" data-autocenter="2"></span>
-                <span data-u="arrowright" class="jssora12r" style="top:0px;right:-60px;width:30px;height:46px;" data-autocenter="2"></span>
+                <span data-u="arrowleft" class="jssora12l" style="top:0px;left:-60px;width:30px;height:46px;"
+                      data-autocenter="2"></span>
+                <span data-u="arrowright" class="jssora12r" style="top:0px;right:-60px;width:30px;height:46px;"
+                      data-autocenter="2"></span>
             </div>
 
 
         </div>
     </div>
 </div>
-<link rel="stylesheet" href="/monkeyweb/slide/style.css" />
+<link rel="stylesheet" href="/monkeyweb/slide/style.css"/>
 <script type="text/javascript" src="/monkeyweb/slide/js/jssor.slider.mini.js"></script>
 <script>
     var hash = window.location.hash.substr(1);
     var platform_index = 0;
-    if(hash == "desktop") {
+    if (hash == "desktop") {
         platform_index = 0;
-    } else if(hash == "ios") {
+    } else if (hash == "ios") {
         platform_index = 1;
-    } else if(hash == "android") {
+    } else if (hash == "android") {
         platform_index = 2;
-    } else if(hash == "amazon") {
+    } else if (hash == "amazon") {
         platform_index = 3;
+    } else if (hash == "mac") {
+        platform_index = 4;
     }
     jQuery(document).ready(function ($) {
 
         var jssor_1_options = {
 //            $AutoPlay: true,
-            $StartIndex : platform_index,
+            $StartIndex: platform_index,
             $ThumbnailNavigatorOptions: {
                 $Class: $JssorThumbnailNavigator$,
                 $Cols: 5,

@@ -2,15 +2,7 @@
 
 $fontend_settings = array(
     'defaultController' => 'index',
-    'controllerMap' => array(
-        'min' => array(
-            'class' => 'ext.minScript.controllers.ExtMinScriptController'
-        ),
-    ),
     'components' => array(
-        'clientScript' => array(
-            'class' => 'ext.minScript.components.ExtMinScript'
-        ),
         'urlManager' => array(
             'class' => 'MyUrlManager',
             'showScriptName' => false,
@@ -48,6 +40,17 @@ $fontend_settings = array(
         )
     )
 );
+
+if(MINIFY_HTML) {
+    $fontend_settings['controllerMap'] = array(
+        'min' => array(
+            'class' => 'ext.minScript.controllers.ExtMinScriptController',
+        )
+    );
+    $fontend_settings['components']['clientScript'] = array(
+        'class' => 'ext.minScript.components.ExtMinScript'
+    );
+}
 
 //luat danh cho trang tieng anh
 global $us_content;
