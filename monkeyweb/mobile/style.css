@@ -1,0 +1,608 @@
+* {
+    padding: 0px;
+        margin: 0px;
+}
+
+
+a {
+    text-decoration: none;
+}
+input, textarea {
+    outline: none !important;
+}
+
+label.error {
+    font-weight: normal;
+    color: red;
+}
+
+img {
+    max-width: 100%;
+}
+
+input.error {
+    color: red;
+    border: 1px solid red;
+}
+
+body {    
+    font-family: helvetica, arial, sans-serif;
+    background: #f2f2f2;
+}
+
+.wrapper {
+    /*max-width: 767px;*/
+    width: 100%;
+    background: white;
+}
+
+div.colorful div {    
+    height: 10px;
+    float: left;
+}
+
+div.colorful .color1 {
+    width: 13%;
+    background: #F8618C;
+}
+
+div.colorful .color2 {
+    width: 25%;
+    background: #EDC563;
+}
+
+div.colorful .color3 {
+    width: 25%;
+    background: #2C749A;
+}
+
+div.colorful .color4 {
+    width: 25%;
+    background: #FF8055;
+}
+
+div.colorful .color5 {
+    width: 12%;
+    background: #FC5F34;
+}
+
+.nav {
+    height: 90px;
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.44);
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.44);
+    position: relative;
+    padding: 10px 0px;    
+}
+
+.nav img {
+    width: 100%
+}
+
+.nav .nav-bar {
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.nav .nav-lang {
+    padding-top: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+
+
+.zbg {
+    position: relative;    
+}
+
+.light {
+    background: url(/monkeyweb/mobile/images/light.png) no-repeat center -90px;
+    height: 80px;
+    position: absolute;
+    z-index: 999;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.home_block1 {
+    background: #CDDC39;
+    padding: 30px 0px 60px 0px;
+
+}
+
+.home_block1 .desc {
+    text-align: center;
+}
+
+.home_block1 .desc h2 {
+    font-weight: bold;
+}
+
+.videointro {
+    text-align: center;
+    position: relative;
+}
+.videointro img {
+    width: 100%;
+    max-width: 730px;
+}
+
+.videointro .home-icon_playvideo {
+    position: absolute;
+    top: 150px;
+    left: 280px;
+    display: none;
+}
+.store {
+    padding-top: 30px;
+}
+.store p {
+    font-style: italic;
+    text-align: center;
+}
+.store ul {
+    width: 340px;
+    margin: 0px auto;
+}
+.store ul li {
+    display: block;
+    list-style: none;
+    padding: 10px 0px;
+}
+
+.store .total-download {    
+    text-align: center;    
+}
+
+.store .total-download em{
+    text-align: center;
+    display: block;
+    padding: 10px 0px;
+}
+
+.store .total-download span {
+    color: white;
+    font-style: normal;
+    background: #879025;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0px 2px;
+}
+
+.home-subscribe {
+    padding-bottom: 0px !important;
+}
+
+.home-subscribe em.heading{
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.home-subscribe ul {
+    text-align: center;
+}
+.home-subscribe ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+
+.home-subscribe-form {
+    background: #5E5653;
+    color: white;
+    padding: 30px 0px;
+    margin-top: 30px;
+}
+
+.home-subscribe-form p {
+    text-align: center;
+}
+
+.home-subscribe-form .btn {
+    background: #BFD010;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.sample {
+    background: url(images/sample_bg.png) repeat-y center 0px;
+    padding: 30px 0px;
+}
+.sample .title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.sample .title em {
+    display: block;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.play-sample em {
+    display: block;
+    text-align: center;
+}
+
+.play-sample .inner {
+    position: relative;
+}
+
+.play-sample .text {
+    position: absolute;
+    top: 36px;
+    left: 53px;
+}
+
+.play-sample .text strong {
+    font-style: italic;
+    font-weight: normal;
+    color: black;
+    text-align: left;
+    display: block;
+
+}
+
+.play-sample .text p {
+    color: #386210;    
+}
+
+.play-sample .ls {
+    padding-bottom: 30px;
+}
+
+.play-sample .home-icon_playvideo {    
+    position: absolute;
+    top: 145px;
+    left: 306px;
+    display: none;
+}
+
+.overview {
+    padding-top: 50px;
+}
+.overview .img {
+    text-align: center;
+}
+.overview .title {
+    text-align: center;
+}
+.overview .title em {
+    display: block;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.overview p.tl {
+    font-weight: bold;
+    text-align: center;
+}
+
+.overview p {
+    padding-bottom: 20px;
+}
+.overview ul.list {
+
+}
+.overview ul.list li{
+    list-style: none;
+    display: block;
+}
+.overview .ct {
+    text-align: center;
+}
+
+.ptop {
+    padding: 50px 0px;
+}
+.systematic {
+    padding-bottom: 50px;
+}
+.systematic .title {
+    text-align: center;
+}
+.systematic .title em {
+    display: block;
+    font-weight: bold;
+    font-style: normal;
+}
+.systematic .ct {
+    text-align: center;
+}
+
+.systematic .heading {
+
+}
+
+.overview .thumbnail {
+    border: none;    
+}
+.overview ul.tinhnang li {
+    list-style: none;
+}
+.overview ul.tinhnang h4 {
+    display: block;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;        
+    padding-bottom: 20px;
+}
+
+.overview ul.tinhnang p {
+    padding: 0px 50px;
+}
+
+.buyblock {
+    background: url("/monkeyweb/mobile/images/wow_bg.png") repeat-x center 0px;
+    height: 488px;
+    margin-top: 30px;
+}
+
+.buyblock .heading {        
+    text-align: center;
+    padding: 90px 0px 30px 0px;
+}
+
+.buyblock .heading em {
+    color: white;
+    text-transform: uppercase;
+}
+
+.buyblock .heading h4 {
+    color: white;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.buyblock .downloadbtn {
+    width: 720px;
+    padding-top: 8px;
+    margin: 0px auto;
+}
+
+.buyblock .downloadbtn a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.buyblock .downloadbtn i {
+    background: url("/monkeyweb/mobile/images/won_btn.png") no-repeat 0px 0px;
+    width: 720px;
+    height: 140px;
+    display: block;
+    font-style: normal;
+    padding-top: 42px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.global .heading {
+    text-align: center;
+}
+
+.global .heading p.title {
+    color: #5BBDFA;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.global .heading p.desc {
+    color: #727F87;
+    font-style: italic;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+.global .img {
+    padding-bottom: 50px;
+    display: block;
+    margin: 0px auto;
+}
+
+.global .comment {    
+    float: left;
+    margin-bottom: 30px;
+}
+
+.global .comment .ava {
+    min-height: 180px;
+    float: left;
+}
+
+.global .comment img {    
+    float: left;
+    padding-right: 15px;
+    overflow: hidden;
+}
+
+.global .comment p.ct {
+    text-align: left;
+    font-style: italic;
+    line-height: 150%;
+}
+
+.global .comment p.ct em {
+    color: gray;
+}
+
+.global .comment p.name {
+    text-align: left;
+    font-weight: bold;
+}
+
+.review_slider li {
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.bx-pager-item {
+    display: inline-block;
+    padding: 0px 3px;
+}
+
+.bx-controls-direction {
+    display: none;
+}
+
+.bx-pager-link {
+    width: 40px;
+    height: 40px;
+    background-position: -5px -5px;
+    background-image: url(/monkeyweb/mobile/images/home-spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+    color: transparent;
+    text-indent: -99999px;
+}
+
+.bx-pager-item .active {    
+    color: transparent;
+    background-position: -55px -5px;
+}
+
+.bx-controls {
+    text-align: center;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.newsletter {
+    background: url("/monkeyweb/mobile/images/newsletter_ng.png") repeat-x center center;
+    text-align: center;
+    color: white;
+    padding-bottom: 0px !important;
+}
+
+.newsletter .form-group{
+    padding-bottom: 15px;
+}
+
+.newsletter .btn-default {
+    background: #CDDC39;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.newsletter .social {
+    height: 75px;
+    background-color: #5E5653;
+    margin-top: 35px;
+}
+
+.newsletter .social a {
+    display: block;
+    padding: 0px 10px;
+    float: left;
+}
+
+.newsletter .floow_bg {
+    background: url("/monkeyweb/mobile/images/follow_bg.png") no-repeat center center;
+    width: 259px;
+    height: 75px;
+    line-height: 75px;
+    color: white;
+    display: block;
+    float: left;
+    padding-left: 30px;
+}
+
+.footer {
+    background: url("/monkeyweb/mobile/images/footer_bg.png") repeat-x center -10px;
+    /*height: 287px;*/
+    -webkit-box-shadow: inset 0px 5px 5px -3px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: inset 0px 5px 5px -3px rgba(0, 0, 0, 0.44);
+    box-shadow: inset 0px 5px 5px -3px rgba(0, 0, 0, 0.44);
+    position: relative;
+}
+
+.footer .url {
+    text-align:  center;
+}
+
+.footer .vn ul li a {
+
+}
+
+.footer .copyright {
+    display: block;
+    text-align: center;
+}
+.footer .copyright p {
+
+}
+
+.footer ul li {
+    list-style: disc;
+    line-height: 75px;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer .row1 {
+    padding-top: 40px;
+    color: #272B0A;
+}
+
+.footer .row1 p.company_name {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer .ctact {
+    padding: 10px 0px;
+}
+
+.footer .lienhe {
+    margin: 0px auto;
+}
+
+.footer .left {
+    color: #272B0A;
+    padding-left: 40px;
+}
+
+.footer .left a {
+    color: #272B0A;
+}
+
+.footer .left a:hover {
+    text-decoration: none;
+}
+
+.footer .right {
+    color: #272B0A;
+    padding-left: 40px;
+    margin-top: 30px;
+}
+
+.footer .ctact p {
+    float: left;
+    padding-top: 13px;
+    display: block;
+    line-height: 150%;
+    margin: 0px;
+}
+
+.home-icon_map, .home-icon_phone {
+    float: left;
+}
+
+.footer .link {
+    border-top: 1px solid #272B0A;
+}
+
+.form-control {
+    height: 70px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+        <style type="text/css">
+            body {
+                max-width: 767px
+            }
+            div  {
+                background: red;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div>TODO write content</div>
+        <h1>MONKEY JUNIOR LỌT VÀO VÒNG CHUNG KHẢO CỦA GIẢI THƯỞNG NHÂN TÀI ĐẤT VIỆT 2015</h1>
+
+
+        <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/OdT9z-JjtJk&autoplay=1" frameborder="0" allowfullscreen></iframe>-->
+        <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+        <div id="player"></div>
+
+        <script>
+            // 2. This code loads the IFrame Player API code asynchronously.
+            var tag = document.createElement('script');
+
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+            // 3. This function creates an <iframe> (and YouTube player)
+            //    after the API code downloads.
+            var player;
+            function onYouTubeIframeAPIReady() {
+                player = new YT.Player('player', {
+                    height: '390',
+                    width: '100%',
+                    videoId: 'rbB8mzAlzMM',
+                    events: {
+                        'onReady': onPlayerReady,
+//                        'onStateChange': onPlayerStateChange
+                    }
+                });
+            }
+
+            // 4. The API will call this function when the video player is ready.
+            function onPlayerReady(event) {
+                event.target.playVideo();
+            }
+
+            // 5. The API calls this function when the player's state changes.
+            //    The function indicates that when playing a video (state=1),
+            //    the player should play for six seconds and then stop.
+            var done = false;
+            function onPlayerStateChange(event) {
+                if (event.data == YT.PlayerState.PLAYING && !done) {
+                    setTimeout(stopVideo, 6000);
+                    done = true;
+                }
+            }
+            function stopVideo() {
+                player.stopVideo();
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,433 @@
+
+.wizard-steps-panel {
+    position: relative;
+    height: 4em;
+    display: none;
+}
+
+.wizard-steps-panel .step-number {
+    display: inline-block;
+    text-align: center;
+    font-size: 26px;
+    position: relative;
+}
+
+.wizard-steps-panel .step-number .number {
+    width: 1.7em;
+    height: 1.7em;
+    background-color: #dedede;
+    color: #5a5a5a;
+    margin-left: calc(50% - 1.7em / 2);
+    border: 4px solid #dedede;
+    border-radius: 1.7em;
+}
+
+.wizard-steps-panel .step-number.doing .number,
+.wizard-steps-panel .step-number.doing .number:after,
+.wizard-steps-panel .step-number.doing .number:before {
+    background-color: #FF5454;
+    border: 4px solid #FF5454;
+    color: white;
+}
+
+.wizard-steps-panel .step-number.done .number,
+.wizard-steps-panel .step-number.done .number:after,
+.wizard-steps-panel .step-number.done .number:before {
+    background-color: #79C447;
+    border: 4px solid #79C447;
+    color: white;
+}
+
+.wizard-steps-panel .step-number .number:before {
+    content: ' ';
+    position: absolute;
+    border: 4px solid #dedede;
+    border-radius: 4px;
+    left: -4px;
+    right: calc(50% + 1.4em / 2);
+    top: calc(1.4em / 2);
+}
+
+.wizard-steps-panel .step-number .number:after {
+    content: ' ';
+    position: absolute;
+    border: 4px solid #dedede;
+    border-radius: 4px;
+    left: calc(50% + 1.4em / 2);
+    right: -4px;
+    top: calc(1.4em / 2);
+}
+
+.wizard-steps-panel.steps-quantity-1 .step-number {
+    width: 99%;
+}
+
+.wizard-steps-panel.steps-quantity-2 .step-number {
+    width: 49%;
+}
+
+.wizard-steps-panel.steps-quantity-3 .step-number {
+    width: 32%;
+}
+
+.wizard-steps-panel.steps-quantity-4 .step-number {
+    width: 24%;
+}
+
+.wizard-steps-panel.steps-quantity-5 .step-number {
+    width: 19%;
+}
+
+.wizard-steps-panel.steps-quantity-6 .step-number {
+    width: 15%;
+}
+
+.modal-footer {
+    display: none;
+}
+
+/* CSS buy popup */
+
+#buyModal .modal-dialog {
+    width: 850px;
+}
+
+#buyModal .tabbar {
+    background: #CDDC39;
+    height: 70px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    margin: 5px;
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.44);
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.44);
+}
+
+#buyModal .tabbar ul li {
+    list-style: none;
+    display: inline-block;
+    height: 70px;
+    color: gray;
+}
+
+#buyModal .tabbar ul li.current {
+    color: black;
+}
+
+#buyModal .tabbar ul li div.number {
+    font-size: 49px;
+    font-weight: 700;
+    float: left;
+    width: 50px;
+    text-align: center;
+}
+
+#buyModal .tabbar ul li.arow {
+    padding: 15px 0px 0px 30px;
+}
+
+#buyModal .tabbar ul li .r {
+    float: left;
+}
+
+#buyModal .tabbar ul li .r strong {
+    display: block;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+#buyModal .tabbar ul li .r em {
+    display: block;
+    font-size: 23px;
+    font-style: normal;
+}
+.method {
+    border-bottom: 1px solid #adadad;
+    cursor: pointer;
+}
+
+.method .icon {
+    float: left;
+}
+
+.method .choose {
+    width: 60px;
+    float: left;
+    text-align: center;
+    height: 50px;
+}
+
+.method .desc {
+    float: left;
+    width: 80%;
+}
+
+.method > label {
+    display: block;
+    cursor: pointer;
+    font-weight: normal;
+    padding: 20px 0px;
+}
+
+.selected {
+    background: #FCFFE4;
+}
+
+.muaban-btn_hoantat, .muaban-btn_datmua,
+.muaban-btn_quaylai, .muaban-btn_tieptuc, .muaban-btn_hoantat_small {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    float: right;
+}
+.muaban-btn_quaylai {
+    float: left;
+}
+
+.function_btn {
+    padding-top: 10px;
+}
+.function_btn .inner{
+    float: right;
+    width: 410px;
+}
+
+#buyModal .heading {
+    border-bottom: 1px solid #adadad;
+    height: 55px;
+}
+
+#buyModal .heading {
+    border-bottom: 1px solid #adadad;
+    height: 55px;
+}
+
+#buyModal .muaban-icon-info {
+    float: left;
+}
+
+#buyModal .heading strong {
+    display: block;
+    float: left;
+    font-size: 20px;
+    padding-left: 3px;
+    padding-top: 19px;
+    font-weight: 300;
+}
+
+.thongtinlienhe1 {
+    padding-top: 10px;
+}
+
+.thongtinlienhe1 input {
+    width: 70%;
+}
+
+.thongtinlienhe1 label {
+    font-weight: 300;
+}
+
+.thongtinlienhe1 .function_btn {
+    padding-top: 50px;
+}
+
+.function_btn .ht {
+    width: 300px;
+    margin: 0px auto;
+}
+
+span.desc {
+    float: left;
+    padding-left: 10px;
+    padding-top: 6px;
+    color: red;
+}
+.tabbar .logo {
+    width: 330px;
+    margin: 0px auto;
+}
+
+#buyModal .onepay ol{
+    margin-left: 40px;
+}
+#buyModal .onepay .tinthongchuyenkhoan {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #adadad;
+}
+
+#buyModal .onepay .desc {
+    padding-top: 10px;
+}
+
+#buyModal .onepay strong {
+    font-weight: normal;
+}
+
+#buyModal .onepay .tinthongchuyenkhoan p, #buyModal .onepay .desc b {
+    font-weight:700;
+}
+
+#buyModal .onepay .desc span {
+    font-weight:700;
+    color: red;
+}
+
+#buyModal .onepay .tinthongchuyenkhoan p span {
+    font-weight: normal;
+}
+
+#buyModal .thankyou h1{
+    text-align: center;
+    font-style: italic;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+#buyModal .thankyou p{
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 28px;
+}
+
+#buyModal .orderdetail .heading {
+    border: none !important;
+}
+
+#buyModal .orderdetail .userinfo {
+    border-bottom: 1px solid #adadad;
+    padding-bottom: 10px;
+}
+
+#buyModal .orderdetail .userinfo label {
+    font-weight: bold;
+}
+
+#buyModal .orderdetail .userinfo label span {
+    font-weight: normal;
+}
+
+#buyModal .orderdetail  .hinhthucthanhtoan {
+    border-bottom: 1px solid #adadad;
+    padding-bottom: 10px;
+}
+
+#buyModal .orderdetail  .hinhthucthanhtoan .left {
+    float: left;
+    font-weight: bold;
+    color: #666701;
+}
+
+#buyModal .orderdetail  .hinhthucthanhtoan .right {
+    float: left;
+    padding-left: 30px;
+}
+
+.orderdetail td {
+    background: #F0F9FF;
+}
+.muaban-btn_close {
+    position: absolute;
+    top: -20px;
+    right: -22px;
+    cursor: pointer;
+}
+.pricing-btn_buynow {
+    cursor: pointer;
+}
+
+.input-phone {
+    width: 150px !important;
+    float: left !important;
+}
+#buyModal .container {
+    width: 100% !important;
+}
+
+#buyModal .container ol {
+    margin-bottom: 0px !important;
+}
+
+#form2 input.error {
+    border: 1px solid red;
+}
+
+.orderdetail h3 {
+    color: #666701;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -ms-animation: spin .7s infinite linear;
+    -webkit-animation: spinw .7s infinite linear;
+    -moz-animation: spinm .7s infinite linear;
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+
+@-webkit-keyframes spinw {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes spinm {
+    from { -moz-transform: rotate(0deg);}
+    to { -moz-transform: rotate(360deg);}
+}
+
+.coupon_form {
+    display: none;
+}
+
+.coupon input.cp {
+    display: inline-block;
+    width: 80px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.coupon button {
+    background: #FD6500;
+    border: none;
+    outline: none;
+    color: white;
+    height: 32px;
+}
+
+.coupon button:hover, .coupon button:focus {
+    background: #FD6500;
+    color: white;
+}
+label.error {
+    font-weight: normal;
+}
+
+label.coupon_invalid {
+    display: none;
+}
+
+.div-coupon {
+    padding-right: 20px;
+}
+
+abbr {
+    font-weight: bold;
+    color: red;
+}
+
+.giamgia {
+    display: none;
+}
+
+#save_price {
+    font-size: 18px;
+    color: #7CA828;
+    font-weight: bold;
+}

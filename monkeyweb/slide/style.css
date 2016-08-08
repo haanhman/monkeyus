@@ -1,0 +1,99 @@
+.slide-data {
+
+}
+.slide-data .inner {
+    width: 530px;
+    height: 310px;
+    float: left;
+    position: relative;
+    padding-top: 35px;
+}
+.slide-data .inner p.desc {
+    font-size: 16px;
+}
+.slide-data .inner p.download {
+    position: absolute;
+    bottom: 45px;
+    left: 0px;
+}
+.slide-data .image {
+    width: 400px;
+    float: right;
+}
+.jssort14 .p {
+    position: absolute;
+    width: 240px;
+    height: 90px;
+    top: 0;
+    left: 0;
+    padding: 0px;
+    background: #fff;
+    text-align: center;
+    opacity: 0.3;
+}
+
+.jssort14 .w {
+    cursor: pointer;
+    position: absolute;
+    WIDTH: 100%;
+    HEIGHT: 100%;
+}
+
+.jssort14 .pdn .w, .jssort14 .pav .w, .jssort14 .p:hover .w {
+
+}
+
+.jssort14 .c {
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 23px;
+    text-align: center;
+    color: #000;
+    font-size: 12.5px;
+    /*background-color: #e2e2e2;*/
+    transition: background-color .6s;
+    -moz-transition: background-color .6s;
+    -webkit-transition: background-color .6s;
+    -o-transition: background-color .6s;
+}
+
+.jssort14 .p:hover .c, .jssort14 .pav:hover .c, .jssort14 .pav .c {
+    transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: none;
+}
+.jssort14 .pav {
+    opacity: 1;
+}
+.jssort14 .pav .c {
+    background-color: #e2e2e2;
+}
+
+.jssort14 .p:hover .c, .jssort14 .pav:hover .c {
+    background-color: #e2e2e2;
+}
+
+.jssort14 {
+    position:absolute;left:0px;top:-30px !important;width:960px;height:27px;
+}
+
+.jssora12l, .jssora12r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 30px;
+    height: 46px;
+    cursor: pointer;
+    background: url('/monkeyweb/slide/img/a12.png') no-repeat;
+    /*overflow: hidden;*/
+}
+.jssora12l { background-position: -16px -37px; }
+.jssora12r { background-position: -75px -37px; }
+.jssora12l:hover { background-position: -136px -37px; }
+.jssora12r:hover { background-position: -195px -37px; }
+.jssora12l.jssora12ldn { background-position: -256px -37px; }
+.jssora12r.jssora12rdn { background-position: -315px -37px; }

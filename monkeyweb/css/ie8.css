@@ -1,0 +1,7 @@
+#buyModal .modal-dialog {
+    margin: 0px auto !important;
+    width: 850px !important;
+}
+.modal-content {
+    width: 100% !important;
+}

@@ -1,0 +1,119 @@
+.home {
+    background-image: url(images/home-spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.home-dot {
+    width: 40px;
+    height: 40px;
+    background-position: -5px -5px;
+}
+
+.home-dot_active {
+    width: 40px;
+    height: 40px;
+    background-position: -55px -5px;
+}
+
+.home-flag_cn {
+    width: 160px;
+    height: 160px;
+    background-position: -105px -5px;
+}
+
+.home-flag_fr {
+    width: 160px;
+    height: 160px;
+    background-position: -275px -5px;
+}
+
+.home-flag_tbn {
+    width: 160px;
+    height: 160px;
+    background-position: -445px -5px;
+}
+
+.home-flag_uk {
+    width: 160px;
+    height: 160px;
+    background-position: -5px -175px;
+}
+
+.home-flag_us {
+    width: 160px;
+    height: 160px;
+    background-position: -175px -175px;
+}
+
+.home-flag_vn {
+    width: 160px;
+    height: 160px;
+    background-position: -345px -175px;
+}
+
+.home-icon_amazon {
+    width: 340px;
+    height: 125px;
+    background-position: -5px -345px;
+}
+
+.home-icon_android {
+    width: 340px;
+    height: 125px;
+    background-position: -5px -480px;
+}
+
+.home-icon_ios {
+    width: 340px;
+    height: 125px;
+    background-position: -615px -5px;
+}
+
+.home-icon_language {
+    width: 60px;
+    height: 60px;
+    background-position: -615px -140px;
+}
+
+.home-icon_map {
+    width: 100px;
+    height: 100px;
+    background-position: -685px -140px;
+}
+
+.home-icon_nav {
+    width: 80px;
+    height: 60px;
+    background-position: -795px -140px;
+}
+
+.home-icon_phone {
+    width: 100px;
+    height: 100px;
+    background-position: -885px -140px;
+}
+
+.home-icon_playvideo {
+    width: 200px;
+    height: 200px;
+    background-position: -515px -250px;
+}
+
+.home-social_fb {
+    width: 70px;
+    height: 70px;
+    background-position: -725px -250px;
+}
+
+.home-social_tw {
+    width: 70px;
+    height: 70px;
+    background-position: -805px -250px;
+}
+
+.home-social_youtube {
+    width: 70px;
+    height: 70px;
+    background-position: -885px -250px;
+}

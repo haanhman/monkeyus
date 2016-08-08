@@ -1,0 +1,51 @@
+<?php
+
+return array(
+    'thong bao' => 'Thông báo',
+    'thay doi mat khau' => 'Thay đổi mật khẩu',
+    'mat khau cu' => 'Mật khẩu cũ',
+    'mat khau moi' => 'Mật khẩu mới',
+    'xac nhan mat khau moi' => 'Xác nhận mật khẩu mới',
+    'thong tin thanh toan' => 'Thông tin thanh toán',
+    'dang xuat' => 'Đăng xuất',
+    'them moi' => 'Thêm mới',
+    'luu' => 'Lưu',
+    'thanh cong' => 'Thành công',
+    'stt' => 'STT',
+    'xoa' => 'Xoá',
+    'noi dung' => 'Nội dung',
+    'ngay gui' => 'Ngày gửi',
+    'thong tin tai khoan' => 'Thông tin tài khoản',
+    'confirm' => 'Bạn có chắc không?',
+    'agent_created' => 'Ngày đăng ký',
+    //form
+    'fullname' => 'Họ tên',
+    'is_f1' => 'Đại lý cấp 1',
+    'email' => 'Địa chỉ email',
+    'fb_page' => '(admin) Facebook Page',
+    'address' => 'Địa chỉ',
+    'more_info' => 'Thông tin thêm',
+    'status' => 'Trạng thái',
+    'them moi agent thanh cong' => 'Thêm mới agent thành công',
+    'chinh sua thong tin agent thanh cong' => 'Chỉnh sửa thông tin agent thành công',
+    //thong tin thanh toan
+    'number_card' => 'Số thẻ',
+    'number_name' => 'Tên chủ thẻ',
+    'bank_name' => 'Ngân hàng',
+    'bank_branch' => 'Chi nhánh',
+    
+    'status_1' => 'Hoạt động',
+    'status_0' => 'Ngừng hoạt động',
+    'them moi' => 'Thêm mới',
+    'quay lai' => 'Quay lại',
+    'them moi/sua affiliate' => 'Thêm mới/sửa affiliate',
+    'danh sach affiliate' => 'Danh sách affiliate',
+    'gui thong tin toi affiliate thanh cong' => 'Gửi thông tin tới affiliate thành công',
+    'danh sach order' => 'Danh sách orders',
+    'productid' => 'Gói',
+    'price' => 'Giá',
+    'ngay mua' => 'Ngày mua',
+    'ban co tong so order' => 'Bạn có tổng số <strong>:total</strong> orders',
+    'chiet khau' => 'Chiết khấu'
+    
+);

@@ -1,0 +1,72 @@
+* {margin: 0px; padding: 0px;}
+a {
+    text-decoration: none;
+}
+img {
+    border: none;
+}
+body {    
+    font-size: 14px;
+}
+.clear {
+    clear: both;
+}
+@font-face {
+    font-family: 'Big_Bottom';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Chewy'), url(Big_Bottom_Typeface_Normal.woff) format('woff');  
+}
+
+@font-face {
+    font-family: 'VINHAN';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Chewy'), url(VINHAN.woff) format('woff');  
+}
+
+ul li {
+    list-style: none;
+}
+li img {width: 175px; height: 175px;}
+div.phantrang img {width: 25px; height: 25px;}
+div.phantrang {text-align: center}
+img.close {position: fixed; top: 10px; left: 10px;}
+
+h1 {
+    font-family: Big_Bottom;
+    color: #4E2E1F;
+    font-size: 22px;
+    text-align: center;
+}
+h1 span {
+    color: #53B9F0;
+}
+h1 img {
+    vertical-align: middle;
+}
+
+div#container {
+    width: 850px;
+    margin: 0px auto;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+ul li {
+    width: 175px;
+    display: block;
+    float: left;
+    padding-bottom: 15px;
+}
+ul li.pd {margin-left: 50px;}
+
+ul li strong {
+    font-family: VINHAN;
+    color: #010101;
+    font-size: 22px;
+    text-align: center;
+    width: 175px;
+    display: inline-block;
+}
+

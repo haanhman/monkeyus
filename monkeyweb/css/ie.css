@@ -1,0 +1,267 @@
+* html #div { 
+    height: 300px;
+}
+
+input {
+    outline: none !important;
+}
+
+.top nav ul li a.ie {
+    color: #65666a;
+    text-decoration: none;
+    font-style: normal;
+
+    line-height: 89px;
+    display: table-cell;
+}
+
+.top nav ul li a.ie:hover {
+    color: #FE4B20;
+}
+
+.top nav ul li.active a.ie {
+    color: #FE4B20;
+}
+
+.top nav ul li.active {
+    background: none !important;
+}
+
+img, .png {
+    position: relative;
+    behavior: expression((this.runtimeStyle.behavior="none")&&(this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+       this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+       this.src = "/monkeyweb/css/blank.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+       this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+       this.runtimeStyle.backgroundImage = "none")),this.pngSet=true));
+}
+
+div.downloadhome {
+    width: 1200px !important;
+    height: 750px  !important;
+}
+
+div.downloadhome {
+    padding-bottom: 0px !important;
+    width: 100% !important;
+}
+.overview {
+    text-align: left;
+}
+.overview .title {
+    text-align: center;
+}
+
+.encyclopedia  {
+    text-align: left;
+}
+
+.encyclopedia .title {
+    text-align: center;
+}
+
+.encyclopedia .content {
+    width: 350px !important;
+}
+
+.buyblock .heading {
+    width: 240px !important;
+    margin-left: 100px !important;
+}
+
+.bx-pager-item {
+    display: block;
+    padding: 0px 3px;
+    float: left;
+}
+
+
+.bx-pager-link {
+    width: 21px !important;
+    height: 21px !important;
+    display: block;
+    background: url('ie/scroll_dot.png') no-repeat;
+    behavior: expression((this.runtimeStyle.behavior="none")&&(this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+       this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+       this.src = "/monkeyweb/css/blank.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+       this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+       this.runtimeStyle.backgroundImage = "none")),this.pngSet=true));
+}
+
+.bx-pager-item .active {
+    background: url('ie/scroll_dot_active.png') no-repeat;
+}
+
+.bx-default-pager {
+    width: 100px;
+    margin: 0px auto !important;
+}
+
+.footer ul li {
+    display: block;
+    float: left;
+}
+
+ul.people li {
+    display: block;
+    float: left;
+}
+
+input.about.about-btn-submit {
+    background: url('ie/contact_submit.png') no-repeat;
+    width: 399px;
+    height: 110px;
+    margin: 0px auto;
+    cursor: pointer;
+    behavior: expression((this.runtimeStyle.behavior="none")&&(this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+       this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+       this.src = "/monkeyweb/css/blank.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+       this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+       this.runtimeStyle.backgroundImage = "none")),this.pngSet=true));
+}
+
+div.about_block6 ul li {
+    display: block;
+    float: left;
+}
+
+div.ss {
+    width: 640px !important;
+    margin: 0px auto !important;
+}
+
+.faq-category {
+    margin-bottom: 15px;
+}
+
+.faq-category ul li {
+    display: block;
+    float: left;
+}
+
+i.blog-faq_anser {
+    background: url('ie/hoihoi.png') no-repeat !important;
+    width: 33px !important;
+    height: 30px !important;
+    display: block !important;
+    float: left !important;
+}
+
+.block_book .form .blog-input input {
+    border: none !important;
+}
+
+.archive {
+    width:740px !important;
+    padding-right: 20px;
+    float: left;
+}
+
+.slidebar .download ul {
+    margin-left: 0px !important;
+}
+
+.language_bar ul li {
+    display: block;
+    float: left;
+    width: 150px !important;
+}
+
+.language_bar ul li.active {
+    background: none !important;
+}
+
+.language_bar {
+    width: 550px !important;
+}
+
+.language_bar ul li.active strong {
+    padding-top: 0px !important;
+    color: black;
+    text-align: center;
+}
+
+.cus_review ul li {
+    display: block;
+    float: left;
+    width: 350px !important;
+}
+
+.footer .left {
+    width: 520px !important;
+}
+
+.payment_method ul li.first {
+    margin-left: 0px !important;
+}
+
+/*.muaban-btn_tieptuc {*/
+    /*background: red;*/
+    /*width: 220px;*/
+    /*height: 75px;*/
+/*}*/
+#buyModal .tabbar ul li {
+    display: block;
+    float: left;
+}
+
+#buyModal .modal-dialog {
+    margin: 0px auto !important;
+    width: 850px !important;
+}
+.modal-content {
+    width: 100% !important;
+}
+
+#banggia ul li {
+    display: block;
+    float: left;
+    width: 200px;
+}
+
+#banggia ul.price li {
+    width: 230px;
+}
+
+#banggia ul li div {
+    text-align: left;
+    width: 158px;
+}
+#banggia ul.price li div {
+    margin: 0px auto;
+}
+
+#banggia ul li.all div{
+    padding-left: 60px! important
+}
+
+#banggia ul.price li.full {
+    padding-left: 12px! important
+}
+
+#banggia ul.level {
+    padding-top: 60px;
+}
+
+#banggia ul.comingsoon {
+    padding-top: 60px;
+}
+
+
+#banggia ul.buynow li {
+    list-style: none;
+    width: 244px;
+}
+#banggia ul.buynow li i {
+    height: 50px !important;
+}
+.newsletter {
+    height: auto !important;
+}
+.newsletter .social {
+    height: 76px !important;
+}
+
+.newsletter .social .grid-container-1100 {
+    height: 100% !important;
+}

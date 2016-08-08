@@ -1,0 +1,74 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+
+div.colorful div {
+    width: 12.5%;
+    height: 10px;
+    float: left;
+}
+
+div.colorful .color1 {
+    background: #F8618C;
+}
+div.colorful .color2 {
+    background: #EDC563;
+}
+div.colorful .color3 {
+    background: #2C749A;
+}
+div.colorful .color4 {
+    background: #FF8055;
+}
+div.colorful .color5 {
+    background: #FC5F34;
+}
+div.colorful .color6 {
+    background: #3EC5E3;
+}
+div.colorful .color7 {
+    background: #1B9CC4;
+}
+div.colorful .color8 {
+    background: #66CC82;
+}
+
+@media (max-width: 768px) {
+    .large {
+        display: none;
+    }
+    .medium {
+        display: none;
+    }
+    .small {
+        display: block;
+    }
+}
+@media (max-width: 992px) {
+    .large {
+        display: none;
+    }
+    .medium {
+        display: block;
+    }
+    .small {
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    .large {
+        display: block;
+    }
+    .medium {
+        display: none;
+    }
+    .small {
+        display: none;
+    }
+}
+

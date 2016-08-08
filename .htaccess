@@ -1,0 +1,37 @@
+#<IfModule mod_expires.c>
+#ExpiresActive On
+#ExpiresByType image/jpg "access 1 year"
+#ExpiresByType image/jpeg "access 1 year"
+#ExpiresByType image/gif "access 1 year"
+#ExpiresByType image/png "access 1 year"
+#ExpiresByType text/css "access 1 month"
+##ExpiresByType text/html "access 1 month"
+#ExpiresByType application/pdf "access 1 month"
+#ExpiresByType text/x-javascript "access 1 month"
+#ExpiresByType application/x-shockwave-flash "access 1 month"
+#ExpiresByType image/x-icon "access 1 year"
+#ExpiresDefault "access 1 month"
+#</IfModule>
+
+#Options +FollowSymLinks
+IndexIgnore */*
+RewriteEngine on
+
+
+RewriteCond %{HTTP_HOST} ^monkeyjunior\.vn$
+RewriteRule (.*) http://www.monkeyjunior.vn/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^monkeyjunior\.com$
+RewriteRule (.*) http://www.monkeyjunior.com/$1 [R=301,L]
+
+
+RewriteRule ^mk backend.php
+
+RewriteRule ^crontab crontab.php
+RewriteRule ^subscribe subscribe.php
+# If a directory or a file exists, use it directly.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Otherwise forward it to index.php.
+RewriteRule . index.php

@@ -1,0 +1,101 @@
+.nav-main {
+    background: white;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    height: 91px;
+}
+
+.nav-main img.logo {
+    width: 100%;
+}
+
+.navbar-brand {
+    float: left;
+    font-size: 18px;
+    line-height: 20px;
+    height: 89px;
+    padding: 0px;
+}
+
+.navbar-edu {
+    /*background-color: #F8F8F8;*/
+    /*border-color: #E7E7E7;*/
+}
+/* title */
+.navbar-edu .navbar-brand {
+    color: #777;
+}
+.navbar-edu .navbar-brand:hover,
+.navbar-edu .navbar-brand:focus {
+    color: #5E5E5E;
+}
+/* link */
+.navbar-edu .navbar-nav > li > a {
+    color: #777;
+}
+.navbar-edu .navbar-nav > li > a:hover,
+.navbar-edu .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-edu .navbar-nav > .active > a,
+.navbar-edu .navbar-nav > .active > a:hover,
+.navbar-edu .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+.navbar-edu .navbar-nav > .open > a,
+.navbar-edu .navbar-nav > .open > a:hover,
+.navbar-edu .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* caret */
+.navbar-edu .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-edu .navbar-nav > .dropdown > a:hover .caret,
+.navbar-edu .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-edu .navbar-nav > .open > a .caret,
+.navbar-edu .navbar-nav > .open > a:hover .caret,
+.navbar-edu .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* mobile version */
+.navbar-edu .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-edu .navbar-toggle:hover,
+.navbar-edu .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-edu .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+
+.navbar-nav > li {
+    height: 89px;
+}
+
+.navbar-nav > li > a {
+    line-height: 89px;
+    padding: 0px;
+    margin: 0px;
+    padding: 0px 15px;
+}
+.navbar-nav > li > a:hover {
+    background: none;
+}
+
+.navbar-nav > li > a.language:hover {
+    background: url("/monkeyweb/images/new/lang_icon.png") no-repeat left center;
+}
+
+.navbar-nav .language{
+    background: url("/monkeyweb/images/new/lang_icon.png") no-repeat left center;
+    text-indent: 25px;
+}

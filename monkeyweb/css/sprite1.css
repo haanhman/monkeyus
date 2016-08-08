@@ -1,0 +1,778 @@
+.sprite {
+    background-image: url(/monkeyweb/images/new/home_sprite_1.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-buy_btn {
+    width: 560px;
+    height: 110px;
+    background-position: -5px -5px;
+}
+
+.sprite-dot {
+    width: 21px;
+    height: 21px;
+    background-position: -575px -5px;
+}
+
+.sprite-dot_active {
+    width: 21px;
+    height: 21px;
+    background-position: -606px -5px;
+}
+
+.sprite-fb_icon_1 {
+    width: 65px;
+    height: 65px;
+    background-position: -637px -5px;
+}
+
+.sprite-fb_icon_2 {
+    width: 30px;
+    height: 55px;
+    background-position: -712px -5px;
+}
+
+.sprite-floow_bg {
+    width: 295px;
+    height: 76px;
+    background-position: -752px -5px;
+}
+
+.sprite-footer_btn {
+    width: 305px;
+    height: 70px;
+    background-position: -575px -91px;
+}
+
+.sprite-footer_input {
+    width: 340px;
+    height: 70px;
+    background-position: -5px -171px;
+}
+
+.sprite-icon_map {
+    width: 60px;
+    height: 70px;
+    background-position: -1057px -5px;
+}
+
+.sprite-icon_phone {
+    width: 70px;
+    height: 70px;
+    background-position: -1057px -85px;
+}
+
+.sprite-img_download_amazon {
+    width: 340px;
+    height: 128px;
+    background-position: -355px -171px;
+}
+
+.sprite-img_download_apple {
+    width: 340px;
+    height: 128px;
+    background-position: -705px -171px;
+}
+
+.sprite-img_download_count {
+    width: 50px;
+    height: 52px;
+    background-position: -1127px -5px;
+}
+
+.sprite-img_download_google {
+    width: 340px;
+    height: 128px;
+    background-position: -5px -309px;
+}
+
+.sprite-img_flag_cn {
+    width: 60px;
+    height: 60px;
+    background-position: -1055px -165px;
+}
+
+.sprite-img_flag_fr {
+    width: 105px;
+    height: 105px;
+    background-position: -1055px -235px;
+}
+
+.sprite-img_flag_taybannha {
+    width: 60px;
+    height: 60px;
+    background-position: -1125px -165px;
+}
+
+.sprite-img_flag_uk {
+    width: 105px;
+    height: 105px;
+    background-position: -355px -350px;
+}
+
+.sprite-img_flag_us {
+    width: 105px;
+    height: 105px;
+    background-position: -470px -350px;
+}
+
+.sprite-img_flag_vn {
+    width: 60px;
+    height: 60px;
+    background-position: -585px -350px;
+}
+
+.sprite-img_lentop {
+    width: 80px;
+    height: 80px;
+    background-position: -655px -350px;
+}
+
+.sprite-img_nav_active {
+    width: 80px;
+    height: 28px;
+    background-position: -745px -350px;
+}
+
+.sprite-lang_icon {
+    width: 40px;
+    height: 38px;
+    background-position: -1137px -67px;
+}
+
+.sprite-lang_selected {
+    width: 13px;
+    height: 10px;
+    background-position: -575px -67px;
+}
+
+.sprite-social_bg {
+    width: 92px;
+    height: 248px;
+    background-position: -835px -350px;
+}
+
+.sprite-subscribe_bg {
+    width: 1180px;
+    height: 280px;
+    background-position: -5px -608px;
+}
+
+.sprite-subscribe_button {
+    width: 165px;
+    height: 75px;
+    background-position: -937px -350px;
+}
+
+.sprite-subscribe_input {
+    width: 469px;
+    height: 71px;
+    background-position: -5px -898px;
+}
+
+.sprite-tw_icon_1 {
+    width: 65px;
+    height: 65px;
+    background-position: -1112px -350px;
+}
+
+.sprite-tw_icon_2 {
+    width: 63px;
+    height: 46px;
+    background-position: -745px -425px;
+}
+
+.sprite-video_bg {
+    width: 500px;
+    height: 370px;
+    background-position: -1195px -5px;
+}
+
+.sprite-video_button {
+    width: 140px;
+    height: 140px;
+    background-position: -1187px -385px;
+}
+
+.sprite-yt_icon_1 {
+    width: 65px;
+    height: 65px;
+    background-position: -1337px -385px;
+}
+
+.sprite-yt_icon_2 {
+    width: 56px;
+    height: 55px;
+    background-position: -1412px -385px;
+}
+
+
+
+
+/*custom 1*/
+/*custom css*/
+.sprite-lang_icon {
+    float: left;
+    position: absolute;
+    top: 25px;
+    left: -3px;
+}
+
+.sprite-lang_selected {
+    float: left;
+    position: absolute;
+    top: 40px;
+    right: -8px;
+}
+
+.sprite-subscribe_button {
+    float: left;
+    margin-top: 18px;
+    margin-left: 30px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 25px;
+    font-weight: bold;
+    color: gray;
+    cursor: pointer;
+}
+
+.sprite-subscribe_input {
+    border: none;
+    outline: none;
+    margin-left: 200px;
+    text-indent: 20px;
+    margin-top: 21px;
+    font-size: 30px;
+    font-family: "Lato";
+    font-style: italic;
+    color: black;
+    float: left;
+    background-color: transparent;
+}
+
+.sprite-video_button {
+    position: absolute;
+    top: 115px;
+    left: 180px;
+}
+
+.sprite-video_button-sample {
+    width: 140px;
+    height: 140px;
+    background-position: -1195px -385px;
+    position: absolute;
+    top: 167px;
+    left: 182px;
+}
+
+.sprite-footer_input {
+    border: none;
+    outline: none;
+}
+
+.sprite-floow_bg {
+    color: white;
+    font-size: 30px;
+    line-height: 76px;
+    text-align: left;
+    text-indent: 50px;
+    float: left;
+}
+.sprite-tw_icon_1,
+.sprite-fb_icon_1{
+    margin-top: 7px;
+}
+
+.sprite-yt_icon_2 {
+    margin-top: 12px;
+}
+
+.sprite-social_bg {
+    position: fixed;
+    left: -15px;
+    top: 250px;
+    z-index: 9999;
+}
+
+.sprite-social_bg a {
+    display: block;
+    text-align: center;
+    padding: 13px 17px;
+}
+.sprite-fb_icon_2 {
+    margin-left: 17px;
+}
+
+
+/*about*/
+.about {
+    background-image: url(/monkeyweb/images/new/about-spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.about-btn-submit {
+    width: 400px;
+    height: 110px;
+    background-position: -5px -5px;
+}
+
+.about-input-bg {
+    width: 230px;
+    height: 60px;
+    background-position: -5px -125px;
+}
+
+.about-social-facebook {
+    width: 160px;
+    height: 160px;
+    background-position: -245px -125px;
+}
+
+.about-social-tw {
+    width: 160px;
+    height: 160px;
+    background-position: -415px -5px;
+}
+
+.about-social-youtube {
+    width: 160px;
+    height: 160px;
+    background-position: -415px -175px;
+}
+
+
+/*custom*/
+.about-input-bg {
+    background-color: transparent;
+    text-indent: 10px;
+    border: none;
+    outline: none;
+}
+
+/*blog*/
+
+.blog {
+    background-image: url(/monkeyweb/images/new/blog-spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+.blog-btn {
+    width: 512px;
+    height: 81px;
+    background-position: -5px -5px;
+}
+
+.blog-faq-cong {
+    width: 25px;
+    height: 25px;
+    background-position: -5px -96px;
+}
+
+.blog-faq-tru {
+    width: 25px;
+    height: 25px;
+    background-position: -40px -96px;
+}
+
+.blog-faq_anser {
+    width: 35px;
+    height: 31px;
+    background-position: -75px -96px;
+}
+
+.blog-icon-amazon {
+    width: 190px;
+    height: 75px;
+    background-position: -120px -96px;
+}
+
+.blog-icon-apple {
+    width: 190px;
+    height: 75px;
+    background-position: -320px -96px;
+}
+
+.blog-icon-google {
+    width: 190px;
+    height: 75px;
+    background-position: -5px -181px;
+}
+
+.blog-icon-more {
+    width: 40px;
+    height: 40px;
+    background-position: -205px -181px;
+}
+
+.blog-input {
+    width: 514px;
+    height: 81px;
+    background-position: -5px -266px;
+}
+
+.blog-more_blog {
+    width: 250px;
+    height: 18px;
+    background-position: -255px -181px;
+}
+
+
+/*PRICING*/
+
+.pricing {
+    background-image: url(/monkeyweb/images/new/pricing-spritesheet.png?v=3);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.pricing-btn_buynow {
+    width: 170px;
+    height: 55px;
+    background-position: -5px -5px;
+}
+
+.pricing-btn_seeall {
+    width: 220px;
+    height: 85px;
+    background-position: -185px -5px;
+}
+
+.pricing-btn_seeall_vn {
+    width: 220px;
+    height: 85px;
+    background-position: -415px -5px;
+}
+
+.pricing-icon_select {
+    width: 18px;
+    height: 16px;
+    background-position: -645px -5px;
+    margin: 0px auto;
+}
+
+.pricing-icon_tamgiac_1 {
+    width: 50px;
+    height: 35px;
+    background-position: -673px -5px;
+}
+
+.pricing-icon_tamgiac_2-png {
+    width: 35px;
+    height: 50px;
+    background-position: -733px -5px;
+}
+
+.pricing-lang_cn {
+    width: 102px;
+    height: 102px;
+    background-position: -778px -5px;
+    margin: 0px auto;
+}
+
+.pricing-lang_cn_small {
+    width: 75px;
+    height: 75px;
+    background-position: -5px -117px;
+    margin: 0px auto;
+}
+
+.pricing-lang_fr {
+    width: 102px;
+    height: 102px;
+    background-position: -90px -117px;
+    margin: 0px auto;
+}
+
+.pricing-lang_fr_small {
+    width: 75px;
+    height: 75px;
+    background-position: -202px -117px;
+    margin: 0px auto;
+}
+
+.pricing-lang_tbn {
+    width: 102px;
+    height: 102px;
+    background-position: -287px -117px;
+    margin: 0px auto;
+}
+
+.pricing-lang_tbn_small {
+    width: 75px;
+    height: 75px;
+    background-position: -399px -117px;
+    margin: 0px auto;
+}
+
+.pricing-lang_uk {
+    width: 102px;
+    height: 102px;
+    background-position: -484px -117px;
+    margin: 0px auto;
+}
+
+.pricing-lang_uk_small {
+    width: 75px;
+    height: 75px;
+    background-position: -596px -117px;
+    margin: 0px auto;
+}
+
+.pricing-lang_us {
+    width: 102px;
+    height: 102px;
+    background-position: -681px -117px;
+    margin: 0px auto;
+}
+
+.pricing-lang_us_small {
+    width: 75px;
+    height: 75px;
+    background-position: -793px -117px;
+    margin: 0px auto;
+}
+
+.pricing-lang_vn {
+    width: 102px;
+    height: 102px;
+    background-position: -793px -202px;
+    margin: 0px auto;
+}
+
+.pricing-lang_vn_small {
+    width: 75px;
+    height: 75px;
+    background-position: -5px -202px;
+    margin: 0px auto;
+}
+
+.pricing-language_en {
+    width: 25px;
+    height: 25px;
+    background-position: -878px -117px;
+}
+
+.pricing-language_popup {
+    width: 128px;
+    height: 70px;
+    background-position: -90px -229px;
+}
+
+.pricing-language_vn {
+    width: 25px;
+    height: 25px;
+    background-position: -878px -152px;
+}
+
+.pricing-method_1 {
+    width: 30px;
+    height: 30px;
+    background-position: -228px -202px;
+}
+
+.pricing-method_2 {
+    width: 30px;
+    height: 30px;
+    background-position: -399px -202px;
+}
+
+.pricing-method_3 {
+    width: 30px;
+    height: 30px;
+    background-position: -439px -202px;
+}
+
+.pricing-mua_all {
+    width: 180px;
+    height: 60px;
+    background-position: -479px -229px;
+}
+
+.pricing-mua_all_us {
+    width: 180px;
+    height: 60px;
+    background-position: -5px -314px;
+}
+
+.pricing-mua_full {
+    width: 180px;
+    height: 60px;
+    background-position: -195px -314px;
+}
+
+.pricing-mua_full_us {
+    width: 180px;
+    height: 60px;
+    background-position: -385px -314px;
+}
+
+.pricing-mua_sing_us {
+    width: 180px;
+    height: 60px;
+    background-position: -575px -314px;
+}
+
+.pricing-mua_single {
+    width: 180px;
+    height: 60px;
+    background-position: -5px -384px;
+}
+
+.pricing-package_all {
+    width: 300px;
+    height: 580px;
+    background-position: -913px -5px;
+}
+
+.pricing-package_full {
+    width: 300px;
+    height: 580px;
+    background-position: -5px -595px;
+}
+
+.pricing-package_single {
+    width: 300px;
+    height: 580px;
+    background-position: -315px -595px;
+}
+
+.pricing-quot {
+    width: 46px;
+    height: 32px;
+    background-position: -625px -595px;
+}
+
+
+/*Mua ban*/
+.muaban {
+    background-image: url(/monkeyweb/images/new/muaban-spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.muaban-arow {
+    width: 22px;
+    height: 42px;
+    background-position: -5px -5px;
+}
+
+.muaban-btn_close {
+    width: 45px;
+    height: 45px;
+    background-position: -37px -5px;
+}
+
+.muaban-btn_datmua {
+    width: 250px;
+    height: 85px;
+    background-position: -92px -5px;
+}
+
+.muaban-btn_hoantat {
+    width: 300px;
+    height: 96px;
+    background-position: -5px -100px;
+}
+
+.muaban-btn_hoantat_small {
+    width: 220px;
+    height: 70px;
+    background-position: -5px -206px;
+}
+
+.muaban-btn_quaylai {
+    width: 155px;
+    height: 60px;
+    background-position: -235px -206px;
+}
+
+.muaban-btn_tieptuc {
+    width: 220px;
+    height: 75px;
+    background-position: -5px -286px;
+}
+
+.muaban-icon-edit {
+    width: 60px;
+    height: 50px;
+    background-position: -315px -100px;
+}
+
+.muaban-icon-info {
+    width: 45px;
+    height: 50px;
+    background-position: -235px -276px;
+}
+
+.muaban-icon-online {
+    width: 60px;
+    height: 50px;
+    background-position: -290px -276px;
+}
+
+.muaban-icon-ship {
+    width: 60px;
+    height: 50px;
+    background-position: -235px -336px;
+}
+
+.muaban-icon-visa {
+    width: 60px;
+    height: 50px;
+    background-position: -305px -336px;
+}
+
+.muaban-logo {
+    width: 330px;
+    height: 70px;
+    background-position: -352px -5px;
+}
+
+
+/*Mua ban moi*/
+
+.banggia {
+    background-image: url(/monkeyweb/images/new/banggia.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.banggia-btn_all {
+    width: 190px;
+    height: 65px;
+    background-position: -5px -5px;
+}
+
+.banggia-btn_full {
+    width: 190px;
+    height: 65px;
+    background-position: -5px -80px;
+}
+
+.banggia-btn_single {
+    width: 190px;
+    height: 65px;
+    background-position: -205px -5px;
+}
+
+.banggia-icon-arow {
+    width: 13px;
+    height: 13px;
+    background-position: -205px -80px;
+}
+
+.banggia-icon-tick {
+    width: 40px;
+    height: 30px;
+    background-position: -228px -80px;
+}
+
+.banggia-icon_x {
+    width: 30px;
+    height: 30px;
+    background-position: -278px -80px;
+}
