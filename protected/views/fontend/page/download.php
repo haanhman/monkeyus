@@ -201,13 +201,13 @@
     var hash = window.location.hash.substr(1);
     var platform_index = 0;
     if (hash == "desktop") {
-        platform_index = 0;
-    } else if (hash == "ios") {
-        platform_index = 1;
-    } else if (hash == "android") {
-        platform_index = 2;
-    } else if (hash == "amazon") {
         platform_index = 3;
+    } else if (hash == "ios") {
+        platform_index = 0;
+    } else if (hash == "android") {
+        platform_index = 1;
+    } else if (hash == "amazon") {
+        platform_index = 2;
     } else if (hash == "mac") {
         platform_index = 4;
     }

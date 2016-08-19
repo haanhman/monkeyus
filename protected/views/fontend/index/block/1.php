@@ -23,11 +23,7 @@ $block = intval($arr2[0]);
         <div class="grid-100 store">
             <p><?php echo $this->t($block, 'start_download') ?></p>
             <?php
-            if($this->is_vn == 1) {
-                $this->renderPartial('block/1vn');
-            } else {
-                $this->renderPartial('block/1us');
-            }
+            $this->renderPartial('block/1us', array('data' => $data));
             ?>
             <div class="clearfix"></div>
             <div class="total-download">

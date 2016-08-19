@@ -1,9 +1,15 @@
 <a href="<?php echo $this->createUrl('page/download') ?>">
     <img class="img-dl" src="/monkeyweb/images/freedownload.png" alt=""/>
 </a>
+<?php
+$platform = 'desktop';
+if (strpos($data['os'], 'Mac OS') !== false) {
+    $platform = 'mac';
+}
+?>
 <ul class="list-dl">
     <li>
-        <a href="<?php echo $this->createUrl('page/download') ?>#desktop">
+        <a href="<?php echo $this->createUrl('page/download') ?>#<?php echo $platform ?>">
             <i class="dlsprite dlsprite-download-desktop"></i>
         </a>
     </li>

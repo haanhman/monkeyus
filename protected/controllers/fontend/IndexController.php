@@ -46,6 +46,7 @@ class IndexController extends FontendController
         if ($this->is_mobile) {
             $view = 'mobile/index';
         }
+        $data['os'] = $this->getOS();
         $this->render($view, array('data' => $data));
     }
 
